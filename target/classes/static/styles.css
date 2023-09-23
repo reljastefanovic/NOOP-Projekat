@@ -1,0 +1,76 @@
+body {
+    font-family: 'Source Sans Pro';
+}
+#test{
+    background-image:   url('menu.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 1000px;
+    }
+#h1{
+
+  text-align: center; /* Adjust the alignment as needed (center, left, right, etc.) */
+  font-size: 180px; /* Adjust the font size as needed */
+  margin-left: 100px;
+
+
+}
+
+.menu {
+    position: relative;
+    margin: 80px auto;
+    width: 90%;
+    max-width: 1024px;
+
+}
+#menu {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the content */
+
+  padding: 20px; /* Optional padding for content */
+  /* Add any other styles you need for the content div */
+}
+
+.title {
+    position: relative;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.title span {
+    position: relative;
+    background:#F6C791;
+    padding: 0 15px 0 0;
+}
+
+.title .price {
+    float: right;
+    padding: 0 0 0 15px;
+}
+
+.title:before {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+    border-top: 2px dotted rgba(0, 0, 0, 0.3);
+    display: block;
+    content: '';
+}
+
+@media (min-width: 420px) {
+    article {
+        width: 50%;
+        float: left;
+    }
+}
+
+article p {
+    margin: 0;
+    padding: 0 10px 10px;
+}
