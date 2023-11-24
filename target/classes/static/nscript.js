@@ -47,47 +47,47 @@ let plazmasejkContent = "";
 let crnaContent="";
 nesButton.addEventListener("click", function() {
     clickCount++;
-    cena = cena + 300;
+    cena = cena + 220;
     nesContent = clickCount + "x Nes ........................  " + cena + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+220;
     ukupno.value =+ukupnoo;
 });
 
 latteButton.addEventListener("click", function() {
     clickCount1++;
-    cena1 = cena1 + 300;
+    cena1 = cena1 + 280;
     latteContent = clickCount1 + "x Latte ........................  " + cena1 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+280;
     ukupno.value =+ukupnoo;
 });
 
 jagodaButton.addEventListener("click", function() {
     clickCount2++;
-    cena2 = cena2 + 300;
+    cena2 = cena2 + 270;
     jagodaContent = clickCount2 + "x Jagoda ........................  " + cena2 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+270;
     ukupno.value =+ukupnoo;
 });
 
 document.getElementById("limunada").addEventListener("click", function() {
     clickCount3++;
-    cena3 = cena3 + 300;
+    cena3 = cena3 + 250;
     limunadaContent = clickCount3 + "x Limunada ........................  " + cena3 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+250;
     ukupno.value =+ukupnoo;
 });
 
 
 document.getElementById("Cappucino").addEventListener("click", function() {
     clickCount4++;
-    cena4 = cena4 + 300;
+    cena4 = cena4 + 250;
     cappucinoContent = clickCount4 + "x Cappucino ........................  " + cena4 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+250;
     ukupno.value =+ukupnoo;
 });
 
@@ -104,10 +104,10 @@ document.getElementById("bitter").addEventListener("click", function() {
 
 document.getElementById("crna").addEventListener("click", function() {
     clickCount6++;
-    cena6 = cena6 + 300;
+    cena6 = cena6 + 240;
     crnaContent = clickCount6 + "x Crna ........................  " + cena6 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+240;
     ukupno.value =+ukupnoo;
 });
 
@@ -124,37 +124,37 @@ document.getElementById("bela").addEventListener("click", function() {
 
 document.getElementById("plazmasejk").addEventListener("click", function() {
     clickCount8++;
-    cena8 = cena8 + 300;
+    cena8 = cena8 + 330;
     plazmasejkContent = clickCount8 + "x Plazmasejk ........................  " + cena8 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+330;
     ukupno.value =+ukupnoo;
 });
 
 document.getElementById("karamel").addEventListener("click", function() {
     clickCount10++;
-    cena10 = cena10 + 300;
+    cena10 = cena10 + 220;
     karamelContent = clickCount10 + "x Karamel ........................  " + cena10 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+220;
     ukupno.value =+ukupnoo;
 });
 
 document.getElementById("frapuccino").addEventListener("click", function() {
     clickCount11++;
-    cena11 = cena11 + 300;
+    cena11 = cena11 + 400;
     frapuccinoContent = clickCount11 + "x Frapuccino ........................  " + cena11 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+400;
     ukupno.value =+ukupnoo;
 });
 
 document.getElementById("amerikano").addEventListener("click", function() {
     clickCount12++;
-    cena12 = cena12 + 300;
+    cena12 = cena12 + 250;
     amerikanoContent = clickCount12 + "x Amerikano ........................  " + cena12 + "rsd";
     updateReadOnlyInput();
-    ukupnoo=ukupnoo+300;
+    ukupnoo=ukupnoo+250;
     ukupno.value =+ukupnoo;
 });
 

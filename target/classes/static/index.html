@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
+
         /* Global styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #FFEDC1;
+        }
+
+        /* Video container styles */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Place the video behind other content */
+        }
+
+        /* Overlay pseudo-element */
+        .video-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
         }
 
         /* Navbar styles */
         .navbar {
-            background-color: #FFEDC1;
+            background-color: rgba(0, 0, 0, 0.2); /* Transparent background */
+            position: fixed;
+            width: 100%;
             display: flex;
             align-items: center;
             padding: 15px;
+            top: 0; /* Stick to the top */
         }
 
         .navbar-icon {
-            width: 150px;
-            height: 100px;
+            width: 70px;
+            height: 70px;
             margin-right: 10px;
+            margin-left: 20px;
         }
 
         .navbar-options {
@@ -38,27 +71,11 @@
         }
 
         .navbar-options li a {
-            color: black;
+            color: rgb(255, 255, 255);
             text-decoration: none;
         }
 
-        /* Video overlay styles */
-        .video-container {
-            position: relative;
-        }
-
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value for transparency */
-            display: flex;
-            justify-content: left;
-            align-items: top;
-        }
-
+        /* Overlay text styles */
         .overlay-text {
             color: white;
             font-size: 36px;
@@ -67,37 +84,42 @@
             margin-top: 250px;
             margin-left: 200px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            animation: fadeIn 5s
+            animation: fadeIn 5s;
+            mix-blend-mode: difference; /* Prevents text from getting colored by the overlay */
         }
+
         @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
-<body>
 
-<div class="navbar">
-    <img src="kaficrestsajt.png" alt="Icon" class="navbar-icon">
-    <ul class="navbar-options">
-        <li><a href="#">O nama</a></li>
-        <li><a href="meni.html">Meni</a></li>
-        <li><a href="rezervacija.html">Rezervacija</a></li>
-        <li><a href="narucivanje.html">Naručivanje</a></li>
-    </ul>
-</div>
+<body>
 
 <div class="video-container">
     <video autoplay muted loop id="myVideo">
         <source src="videsajtt.mp4" type="video/mp4">
     </video>
-    <div class="video-overlay">
-        <div class="overlay-text">Dobrodošli u "Rest" - oazu opuštanja i uživanja!
-            <p>Mesto gde vreme usporava, a duša dobija priliku da odahne.</p>
-
-         </div>
+    <div class="navbar">
+        <img src="test5551.png" alt="Icon" class="navbar-icon">
+        <ul class="navbar-options">
+            <li><a href="index.html">O nama</a></li>
+            <li><a href="meni.html">Meni</a></li>
+            <li><a href="rezervacija.html">Rezervacija</a></li>
+            <li><a href="narucivanje.html">Naručivanje</a></li>
+        </ul>
+    </div>
+    <div class="overlay-text">Dobrodošli u "Rest" - oazu opuštanja i uživanja!
+        <p>Mesto gde vreme usporava, a duša dobija priliku da odahne.</p>
     </div>
 </div>
 
 </body>
+
 </html>
